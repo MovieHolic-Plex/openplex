@@ -1,0 +1,38 @@
+{
+  "name": "openplex-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "shared",
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "dev:server": "npm run dev --workspace=@openplex/server",
+    "dev:client": "npm run dev --workspace=@openplex/client",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint scripts server/src server/test client/src client/test shared/index.ts shared/types playwright.config.ts",
+    "test": "npm run test --workspace=@openplex/server",
+    "test:e2e": "node scripts/run-e2e.js",
+    "start": "node scripts/start-all.js",
+    "start:media": "npm run start --workspace=@openplex/server",
+    "start:crawl": "npm run start:crawl --workspace=@openplex/server",
+    "start:e2e": "node scripts/start-e2e.js",
+    "audit:compliance": "node scripts/audit-compliance.js",
+    "audit:scope": "node scripts/audit-scope.js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@playwright/test": "^1.62.1",
+    "eslint": "^9.39.5",
+    "globals": "^16.5.0",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.67.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3"
+  }
+}

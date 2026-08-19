@@ -1,0 +1,24 @@
+{
+  "Data": [
+    {
+      "TotalCount": 1,
+      "Count": 1,
+      "Result": [
+        {
+          "DOCID": "D_00014",
+          "title": "올드보이",
+          "titleOrg": "Oldboy",
+          "titleEng": "Old Boy",
+          "prodYear": "2003",
+          "genre": "드라마,미스터리,스릴러",
+          "plots": {
+            "plot": [
+              { "plotText": "평범한 인생을 살아가던 오대수는 어느 날 감금되고 15년 만에 풀려나 복수를 시작한다." }
+            ]
+          },
+          "posters": "https://file.kmdb.or.kr/poster/oldboy.jpg|https://file.kmdb.or.kr/poster/oldboy2.jpg"
+        }
+      ]
+    }
+  ]
+}
